@@ -1,0 +1,121 @@
+html {
+  font-size: 10px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7em;
+  margin: 5px;
+  background-color: lightgrey;
+  padding: 1em;
+}
+
+#main {
+  background-color: white;
+  padding: 1em;
+  border-radius: 5px;
+  padding: 2em;
+}
+
+header {
+  text-align: center;
+  font-family: "Bangers", cursive;
+  font-size: 1.5em;
+}
+
+#title {
+  margin: 0;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+#img-div {
+  margin: 10px;
+  background-color: #163265;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-weight: 100;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0.2em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#image {
+  /* responsively resize*/
+  display: block; 
+  max-width: 100%;
+  /* centered within its parent element.*/
+  height: auto;
+  margin: auto;
+}
+
+#img-caption {
+  margin: 4px 0 4px 0;
+}
+
+#tribute-info {
+  margin-top: 4em;
+  margin-right: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+ul {
+  text-align: justify;
+  word-spacing: normal;
+  white-space: pre-line;
+}
+
+
+
+@media (min-width: 700px) {
+  body {
+    font-size: 2em;
+    margin: 0;
+    background-size: auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figcaption {
+    padding: 0.5em;
+  }
+  h3 {
+    margin-bottom: 0;
+  }
+  .list {
+    min-width: 50%;
+  }
+  #top-part {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-bottom: 100px;
+  }
+
+  figure {
+    background-color: inherit;
+    padding-top: 3em;
+  }
+
+  #image {
+    max-width: 90%;
+    height: auto;
+  }
+
+  header {
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+}
